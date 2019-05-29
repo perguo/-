@@ -17,8 +17,8 @@
 <form method="get" action="">
     <p>
        用户名：<input type="text" name="username" value="请输入用户名"
-                  onfocus="this.value==''"
-                  onblur="this.value=='请输入用户名'">
+                  onfocus="this.value=''"
+                  onblur="this.value='请输入用户名'">
 <!--  name表示名称、value表示参数-->
     </p>
     <p>
@@ -33,8 +33,8 @@
 <form method="get" action="">
     <p>
        用户名：<input type="text" name="username" value="请输入用户名"
-                  onfocus="if(this.value==''){this.value===''}"
-                  onblur="if(this.value==''){this.value=='请输入用户名'}">
+                  onfocus="if(this.value=='请输入用户名'){this.value=''}"
+                  onblur="if(this.value==''){this.value='请输入用户名'}">
 <!--  name表示名称、value表示参数-->
     </p>
     <p>
