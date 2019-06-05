@@ -94,4 +94,7 @@
  #### 清除浮动流：clear:left/right/both;
  
  
+ #  CSS要点补充说明
+ ## 对于行级元素，如：span，不能设置宽高。但当加上'position:absolute'或者'float:left/right'时，宽高就可以设置了。
+ ## 这是因为：'position:absolute'和'float:left/right'一旦加上，就将布局改为了'display:inline-block'。
  
