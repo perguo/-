@@ -15,3 +15,28 @@
       align-items: center;        /* 垂直居中 */
       justify-content: center;    /* 水平居中 */
 ```
+
+
+##    滚动条样式
+###   滚动条的样式：
+```
+ul::-webkit-scrollbar{
+  width: 4px;
+  height: 0;
+}
+```
+###   滚动条的滑块样式：
+```
+ul::-webkit-scrollbar-thumb{ //thumb 拇指，搭便车
+   bachground: red;
+   border-radius: 2px;
+}
+```
+###   滚动条的滑道样式：
+```
+ul::-webkit-scroll-track{
+   background: red;
+}
+```
+
+
