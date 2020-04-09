@@ -24,10 +24,11 @@
 ##  解决方法：BFC(block format context),块级格式化上下文
 ### 原理：让渲染规则发生改变。特定的盒子会遵循另一套语法规则。
 ### 如何触发一个盒子的bfc：
-    position:absolute;
-    display:inline-block;
-    float:left/right;
-    overflow:hidden;
+
+1.浮动元素：float除none以外的值
+2.绝对定位元素：position(absolute, fixed) 
+3. overflow除了visible以外的值(hiddden,auto, scroll)
+4. display: inline-b;ock, table-cells, flex 
 ### 第一种解决方案：添加overflow:hidden;改变父级渲染规则，让父级变成BFC
 ```
 .wrap{
